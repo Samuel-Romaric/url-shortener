@@ -5,7 +5,7 @@
 
     RewriteEngine On
 
-    # Config for https
+    # Config for use https
     RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
     RewriteCond %{HTTP:X-Forwarded-Proto} =""
     RewriteCond %{HTTPS} ==on
