@@ -26,6 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{ asset('/assets/css/style-app2.css') }}" rel="stylesheet" type="text/css">
 
   <!-- =======================================================
   * Template Name: Bikin - v2.1.0
@@ -39,32 +40,16 @@
 
   <main id="main">
     
-    <div style="background-image: url('assets/img/hero-img.png');" data-aos-delay="150">
+    <div data-aos-delay="150">
 
       @include('layouts.partials.nav')
 
-        <!-- ======= Hero Section ======= -->
-        <section id="hero" class="d-flex align-items-center">
-
-          <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up">
-
-            @yield('index')
-            
-          </div>
-
-        </section><!-- End Hero -->
-
-      @if( Session::has('notification.message') )
-        <div class="alert alert-{{ Session::get('notification.type') }} flash">
-          <i class="icofont-ui-text-chat"></i> 
-          {{ Session::get('notification.message') }}
-        </div>
-      @endif
-
-      @yield('content')
-
     </div>
 
+    <div class="container content-zone">
+      @yield('content')
+    </div>
+      
   </main>
 
   @include('/layouts.partials._footer')

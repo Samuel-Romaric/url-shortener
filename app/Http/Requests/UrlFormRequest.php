@@ -24,7 +24,7 @@ class UrlFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'url' => 'required|url',
+            'url' => 'required|url|min:12',
         ];
     }
 
@@ -36,8 +36,9 @@ class UrlFormRequest extends FormRequest
     public function messages()
     {
         return [
-            'url.required' => 'Ce champ est requis svp!',
+            'url.required' => 'Vous avez omis d\'entrer une url!',
             'url.url' => 'Entrez une url valide svp!',
+            'url.min' => 'Vous devez entrer une url de :min minimum!',
         ];
     }
 }

@@ -1,10 +1,9 @@
-@extends('/layouts/app', ['title' => 'Home'])
+@extends('/layouts/app', ['title' => 'Acceuil'])
 
-
-@section('content')
+@section('index')
   
-  <h1>URL Shortner</h1>
-  <h2>Entered the shortcut URL </h2>
+  <h1>Welcom to {{ config('app.name') }}</h1>
+  <h2>Entrez votre url dans le champ ci-dessous </h2>
   
   <div class="col-lg-8 mt-5 mt-lg-0">
   	
@@ -26,7 +25,7 @@
 	 @if( isset($shortened) )
 	 	<div class="text-center">
 	 		<br>
-	 		<h2>Url found</h2>
+	 		<h2>Une addresse trouvée <i class="icofont-hand-down"></i></h2>
 			<h3>
 				<p>
 					<a style="color: white" href="{{ config('app.url') }}/{{ $shortened }}" target="blank">

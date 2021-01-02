@@ -20,11 +20,12 @@ class UrlsController extends Controller
     }
 
     /**
-     * Create a new url for our user.
+     * Create a new url for our user and store.
      *
+     * @param \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function generate_url(UrlFormRequest $request)
+    public function store(UrlFormRequest $request)
     {
         /****** Recuperation de l'url saisi *******/
         $url = request('url');
@@ -44,66 +45,25 @@ class UrlsController extends Controller
         ]);
 
         if ($row) {
-            // return view('pages.index')->withShortened($row->shortened);
-            return view('pages.index')->withShortenedAndUrl($row->shortened, $row->url);
+            return view('pages.index')->withShortened($row->shortened);
         }
     }
 
     /**
      * Redirect the user to this url.
      *
+     * @param char $shortened
      * @return \Illuminate\Http\Response
      */
-    public function redirect_to_url($shortened)
+    public function show($shortened)
     {
     	$url = Url::whereShortened($shortened)->first();
 
-        if (! $url ) {
+        if ( ! $url ) {
             return redirect('/');
-        } else {
-            return redirect($url->url);
         }
-
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function about()
-    {
-    	return view('/pages.about');
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function competence()
-    {
-    	return view('/pages/competence');
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function experience()
-    {
-    	return view('/pages/experience');
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function contacter()
-    {
-    	return view('/pages/contacter');
+        
+        return redirect($url->url);
     }
 }
 

@@ -1,0 +1,43 @@
+/**
+* Template Name: KnightOne - v2.1.0
+* Template URL: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*---------------------------------------------------------------
+#                                                               #
+#                       App2 Design                             #
+#                                                               #
+---------------------------------------------------------------*/
+body {
+  background-color: #797d7f; 
+  padding-top: 8%;
+}
+
+/*--------------------------------------------------------------
+# Partials design
+--------------------------------------------------------------*/
+.content-zone {
+  color: #C0C0C0; 
+  padding-bottom: 3%;
+}
+
+.apropos {
+  background-color: white; 
+  color: black; 
+  border-radius: 12px; 
+  margin-top: 0%;
+}
+
+.services2 {
+  background-color: white; 
+  color: black; 
+  border-radius: 12px
+}
+
+.contact2 {
+  background-color: white; 
+  color: black; 
+  border-radius: 12px
+}

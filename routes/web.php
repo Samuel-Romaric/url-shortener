@@ -15,11 +15,16 @@ use Illuminate\Support\Facades\Route;
 /* The pricipal route of the url shortener */
 Route::get('/', 'UrlsController@index')->name('home');
 
-/* Generateur de disque dure */
-Route::post('/', 'UrlsController@generate_url');
+Route::post('/', 'UrlsController@store');
+
+/* The secondary route of this app */
+Route::get('about', 'PagesController@about')->name('about');
+
+Route::get('services', 'PagesController@services')->name('services');
+
+Route::get('contact', 'PagesController@contact')->name('contact');
+
+Route::post('contact', 'PagesController@send_msg')->name('contact');
 
 /* Redirection de vers l'url d'origine */
-Route::get('/{shortened}', 'UrlsController@redirect_to_url');
-
-/* The secondary route of the url shortener */
-Route::get('about', 'UrlsController@about')->name('about');
+Route::get('/{shortened}', 'UrlsController@show');
