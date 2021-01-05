@@ -655,6 +655,38 @@ section {
 }
 
 /*--------------------------------------------------------------
+# App2 Design
+--------------------------------------------------------------*/
+.app-second-body {
+  background-color: #797d7f; 
+  padding-top: 8%;
+}
+
+.content-zone {
+  color: #C0C0C0; 
+  padding-bottom: 3%;
+}
+
+.apropos {
+  background-color: white; 
+  color: black; 
+  border-radius: 12px; 
+  margin-top: 0%;
+}
+
+.services2 {
+  background-color: white;
+  color: black; 
+  border-radius: 12px;
+}
+
+.contact2 {
+  background-color: white; 
+  color: black; 
+  border-radius: 12px;
+}
+
+/*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
@@ -712,7 +744,7 @@ section {
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
-.cta {
+/*.cta {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
@@ -759,12 +791,12 @@ section {
     align-items: center;
     justify-content: flex-end;
   }
-}
+}*/
 
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-.features .icon-box h4 {
+/*.features .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
   margin: 5px 0 10px 60px;
@@ -787,12 +819,12 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
-}
+}*/
 
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients {
+/*.clients {
   padding-top: 30px;
 }
 
@@ -818,13 +850,13 @@ section {
 }
 
 .clients img {
-  transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;*/
 }
 
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-.counts {
+/*.counts {
   background: url("../img/counts-bg.jpg") center center no-repeat;
   background-size: cover;
   padding: 80px 0 60px 0;
@@ -871,12 +903,12 @@ section {
   .counts {
     background-attachment: fixed;
   }
-}
+}*/
 
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio #portfolio-flters {
+/*.portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
   list-style: none;
@@ -966,12 +998,12 @@ section {
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
-}
+}*/
 
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
-.pricing {
+/*.pricing {
   background-color: #f9f9f9;
 }
 
@@ -1087,11 +1119,11 @@ section {
   color: #009961;
   border-radius: 50px;
 }
-
+*/
 /*--------------------------------------------------------------
 # Faq
 --------------------------------------------------------------*/
-.faq {
+/*.faq {
   padding: 0;
 }
 
@@ -1194,9 +1226,9 @@ section {
 
 @media (max-width: 992px) {
   .faq {
-    /* img {
+     img {
       padding-top: 30px;
-    } */
+    } 
   }
   .faq .content {
     padding-top: 30px;
@@ -1204,7 +1236,7 @@ section {
   .faq .accordion-list {
     padding-bottom: 30px;
   }
-}
+}*/
 
 /*--------------------------------------------------------------
 # Contact
@@ -1393,7 +1425,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/*.portfolio-details {
   padding-top: 40px;
 }
 
@@ -1476,7 +1508,7 @@ section {
     margin-top: 30px;
   }
 }
-
+*/
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

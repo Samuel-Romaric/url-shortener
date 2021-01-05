@@ -25,8 +25,7 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="{{ asset('/assets/css/style-app2.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Bikin - v2.1.0
@@ -36,7 +35,7 @@
   ======================================================== -->
   
 </head>
-<body>
+<body class="app-second-body">
 
   <main id="main">
     
