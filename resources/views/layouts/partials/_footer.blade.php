@@ -2,7 +2,7 @@
   <footer id="footer">
     <div class="container">
       <h3>{{ config('app.name') }}</h3>
-      <p>Cette plateforme est une application web qui vous permet de réduire vos url de longue taille afin de pouvoir les partager aisement avec vos proches.</p>
+      <p>@lang('text.doc')<!-- Cette plateforme est une application web qui vous permet de réduire vos url de longue taille afin de pouvoir les partager aisement avec vos proches. --></p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>

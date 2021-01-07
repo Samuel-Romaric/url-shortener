@@ -3,14 +3,12 @@
     <div class="container d-flex align-items-center">
 
       <h1 class="logo mr-auto"><a href="index.html">{{ config('app.name') }}</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="{{ activeUrl('home') }}"><a href="{{ route('home') }}">Accueil</a></li>
-          <li class="{{ activeUrl('about') }}"><a href="{{ route('about') }}">Apropos</a></li>
-          <li class="{{ activeUrl('services') }}"><a href="{{ route('services') }}">Services</a></li>
+          <li class="{{ activeUrl('home') }}"><a href="{{ route('home') }}">@lang('text.menu.accueil')</a></li>
+          <li class="{{ activeUrl('about') }}"><a href="{{ route('about') }}">@lang('text.menu.apropos')</a></li>
+          <li class="{{ activeUrl('services') }}"><a href="{{ route('services') }}">@lang('text.menu.services')</a></li>
           <!-- <li class="drop-down"><a href="">Blog</a>
             <ul>
               <li><a href="#">Le monde des SI</a></li>
@@ -31,7 +29,7 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="{{ route('contact') }}" class="get-started-btn scrollto"><i class="icofont icofont-back"></i> Contacter</a>
+      <a href="{{ route('contact') }}" class="get-started-btn scrollto"><i class="icofont icofont-back"></i> @lang('text.menu.contacter')</a>
 
     </div>
   </header><!-- End Header -->

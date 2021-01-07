@@ -7,8 +7,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Disponible à votre service, vous pouvez rentrer en contact avec nous par le bias de notre addresse mail, par appel ou sms, tout en nous écrivant directement à travers ce formulaire ci-dessous.</p>
+          <h2>@lang('text.contact_page.title')</h2>
+          <p>@lang('text.contact_page.text1')</p>
         </div>
       </div>
 
@@ -24,19 +24,19 @@
             <div class="info">
               <div class="address">
                 <i class="ri-map-pin-line"></i>
-                <h4>Localisation:</h4>
+                <h4>@lang('text.contact_page.location') :</h4>
                 <p>Yopougon, Abidjan, Côte d'Ivoire</p>
               </div>
 
               <div class="email">
                 <i class="ri-mail-line"></i>
-                <h4>Email:</h4>
+                <h4>@lang('text.contact_page.mail') :</h4>
                 <p>samuelromaric2015@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="ri-phone-line"></i>
-                <h4>Téléphone:</h4>
+                <h4>@lang('text.contact_page.phone') :</h4>
                 <p>+225 0777 9 3456 1</p>
               </div>
 
@@ -63,18 +63,18 @@
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" value="{{ old('subject') }}" required />
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet / Subject" value="{{ old('subject') }}" required />
                 <div class="validate">
                   {!! $errors->first('subject', '<p class="text-danger">:message</p>') !!}
                 </div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="msg" rows="5" placeholder="Votre Message" required>{{ old('msg') }}</textarea>
+                <textarea class="form-control" name="msg" rows="5" placeholder="Message" required>{{ old('msg') }}</textarea>
                 <div class="validate">
                   {!! $errors->first('msg', '<p class="text-danger">:message</p>') !!}
                 </div>
               </div>
-              <div class="text-center"><button type="submit">Soumettre</button></div>
+              <div class="text-center"><button type="submit">@lang('text.contact_page.btn_submit')</button></div>
             </form>
 
           </div>

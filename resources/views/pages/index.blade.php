@@ -2,8 +2,8 @@
 
 @section('index')
   
-  <h1>Welcom to {{ config('app.name') }}</h1>
-  <h2>Entrez votre url dans le champ ci-dessous </h2>
+  <h1>@lang('text.welcom_title') {{ config('app.name') }}</h1>
+  <h2> @lang('text.title')</h2>
   
   <div class="col-lg-8 mt-5 mt-lg-0">
   	
@@ -18,14 +18,14 @@
 	    	!!}
 	    </div>
 	    <div class="text-center">
-	    	<input type="submit" name="" class="get-started-btn" value="Shortened">
+	    	<input type="submit" name="" class="get-started-btn" value="@lang('text.btn_reduce')">
 	    </div>
 	 </form>
 
 	 @if( isset($shortened) )
 	 	<div class="text-center">
 	 		<br>
-	 		<h2>Une addresse trouvée <i class="icofont-hand-down"></i></h2>
+	 		<h2>@lang('text.address_found')<i class="icofont-hand-down"></i></h2>
 			<h3>
 				<p>
 					<a style="color: white" href="{{ config('app.url') }}/{{ $shortened }}" target="blank">
