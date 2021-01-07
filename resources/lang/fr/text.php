@@ -89,7 +89,7 @@ return [
 
         'location' => 'Localisation',
         'mail' => 'E-mail',
-        'phone' => 'Phone',
+        'phone' => 'Téléphone',
         'btn_submit' => "Envoyer",
     ],
 
